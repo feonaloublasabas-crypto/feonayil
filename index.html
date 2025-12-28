@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+  
+  <nav>
+    <div class="logo">MyPortfolio</div>
+
+    <ul class="nav-links">
+  <li><a href="#home"><i class="fa-solid fa-house"></i> Home</a></li>
+  <li><a href="#about"><i class="fa-solid fa-user"></i> About Me</a></li>
+  <li><a href="#skills"><i class="fa-solid fa-code"></i> Skills</a></li>
+  <li><a href="#projects"><i class="fa-solid fa-folder-open"></i> Projects</a></li>
+  <li><a href="#contact"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+</ul>
+
+
+    <button id="themeToggle">☀️</button>
+  </nav>
+
+  
+  <section id="home" class="home">
+    
+    <img src="profile.jpeg" alt="Professional Photo" class="profile-photo">
+
+    <h1>Hello, I'm <span>Feona Lou T. Blasabas</span></h1>
+    <p class="tagline">IT Student</p>
+    <p class="quote">
+      “Learning one line of code at a time.” </p>
+  </section>
+
+
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="card">
+      <p><strong>Education:</strong> BS Information Technology – 2nd Year EVSU-OCC</p>
+      <p><strong>Technical Interests:</strong> Web Development, UI Design</p>
+      <p><strong>Hobbies:</strong> Coding, Reading, Crafting</p>
+    </div>
+  </section>
+
+  
+  <section id="skills">
+    <h2>Skills</h2>
+
+    <div class="skills-container">
+      <div class="card">
+        <h3>Programming</h3>
+        <ul>
+          <li>CSS</li>
+          <li>HTML</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Tools</h3>
+        <ul>
+          <li>Git & GitHub</li>
+          <li>VS Code</li>
+          <li>Linux Basics</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Technical Areas</h3>
+        <ul>
+          <li>Web Development</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Soft Skills</h3>
+        <ul>
+          <li>Critical Thinking</li>
+          <li>Problem Solving</li>
+          <li>Responsibility</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <div class="card project">
+      <h3>Student Information Manager</h3>
+      <p>A simple system for managing student information.</p>
+      <p><strong>Role:</strong> Front-End Developer</p>
+      <p><strong>Tools:</strong> HTML, CSS, Python</p>
+    </div>
+
+    <div class="card project">
+      <h3>Personal Portfolio Website</h3>
+      <p>A responsive single-page portfolio using HTML, CSS, and JavaScript.</p>
+      <p><strong>Role:</strong> Designer & Developer</p>
+      <p><strong>Tools:</strong> HTML, CSS, JavaScript</p>
+    </div>
+  </section>
+
+  
+  <section id="contact">
+    <h2>Contact Me</h2>
+
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+
+    <div class="contact-info">
+      <p>Email:<a href="feonaloublasabas@gmail.com">feonaloublasabas@gmail.com</a></p>
+      <p>
+        GitHub: github.com/feonayil<br>
+        Facebook:<a href="https://www.facebook.com/share/17wz2pghW4/">Feonalou Blasabas</a> 
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

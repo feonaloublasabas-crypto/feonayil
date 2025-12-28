@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* LIGHT MODE – PASTEL PURPLE */
+:root {
+  --bg: #f6f0ff;
+  --text: #2b1b3f;
+  --card: #e8dcff;
+  --accent: #b58cff;
+}
+
+/* DARK MODE – DARK PURPLE */
+body.dark {
+  --bg: #1a1028;
+  --text: #f2e9ff;
+  --card: #2a1840;
+  --accent: #9b6cff;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* NAV */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: var(--card);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  z-index: 1000;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--text);
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  color: var(--accent);
+}
+
+#themeToggle {
+  border: none;
+  background: var(--accent);
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* SECTIONS */
+section {
+  padding: 110px 20px;
+  min-height: 100vh;
+  max-width: 1000px;
+  margin: auto;
+}
+
+h2 {
+  color: var(--accent);
+  margin-bottom: 15px;
+}
+
+/* HOME */
+.home {
+  text-align: center;
+}
+
+.profile-photo {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid var(--accent);
+  margin-bottom: 15px;
+}
+
+.home span {
+  color: var(--accent);
+}
+
+.tagline {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+/* CARDS */
+.card {
+  background: var(--card);
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+/* SKILLS GRID */
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+}
+
+/* CONTACT */
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.contact-form button {
+  background: var(--accent);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+.nav-links i {
+  margin-right: 6px;
+  color: var(--accent);
+}
+
+.nav-links a {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
